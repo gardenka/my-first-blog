@@ -13,6 +13,9 @@
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaks }}</p>
     </div>
+
+    {% empty %}
+    <p> no posts yet</p>
     {% endfor %}
 
     </body>
